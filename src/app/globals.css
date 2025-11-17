@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.brand-gradient-text {
+  background: linear-gradient(90deg, #8A2BE2, #FF8C00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Custom Scrollbar for Webkit browsers (Chrome, Safari) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #a8a8a8;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* Custom Scrollbar for Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #a8a8a8 #f1f1f1;
+}
