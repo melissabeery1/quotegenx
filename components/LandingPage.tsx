@@ -5,7 +5,6 @@ import { image1, image2, image3, image4 } from './imageData';
 interface LandingPageProps {
   onGetStarted: () => void;
 }
-
 const FeatureCard: React.FC<{ icon: React.ReactNode; title: string; children: React.ReactNode; }> = ({ icon, title, children }) => (
     <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
         <div className="text-purple-600 rounded-lg h-12 w-12 flex items-center justify-center mb-4">
@@ -16,7 +15,7 @@ const FeatureCard: React.FC<{ icon: React.ReactNode; title: string; children: Re
     </div>
 );
 
-export const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
+eexport default function LandingPage({ onGetStarted }: LandingPageProps) {
     return (
         <div className="bg-gray-50 text-gray-800">
             {/* Header */}
