@@ -2,7 +2,7 @@ import React, { useState, useReducer, useCallback, useEffect } from 'react';
 import { produce } from 'immer';
 import { QuoteCustomizer } from './components/QuoteCustomizer';
 import { ImagePreview } from './components/ImagePreview';
-import { LandingPage } from './components/landingpageTEMP';
+import { LandingPage } from './components/LandingPage';
 import { PantheonModal } from './components/PantheonModal';
 import { TourModal } from './components/TourModal';
 import { generateQuote, generateImage, editImage, generateJourneyVariations } from './services/geminiService';
